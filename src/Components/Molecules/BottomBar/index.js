@@ -10,12 +10,19 @@ function ButtomBar() {
   return (
     <div
       className="fixed-bottom border-top pt-2"
-      style={{ backgroundColor: "Menu" }}
+      style={{
+        maxWidth: "900px",
+        left: 0,
+        right: 0,
+        marginLeft: "auto",
+        marginRight: "auto",
+        backgroundColor: "Menu" 
+      }}
     >
       <div className="d-flex justify-content-around">
         <div
           className={`d-flex flex-column justify-content-center align-content-center ${
-            pathname === "/home" ? "text-primary" : "opacity-50"
+            pathname === "/home" ? "text-info" : "opacity-50"
           }`}
           onClick={() => navigate("/home")}
         >
@@ -24,7 +31,7 @@ function ButtomBar() {
         </div>
         <div
           className={`d-flex flex-column justify-content-center align-content-center ${
-            pathname === "/account" ? "text-primary" : "opacity-50"
+            pathname === "/account" ? "text-info" : "opacity-50"
           }`}
           onClick={() => navigate("/account")}
         >

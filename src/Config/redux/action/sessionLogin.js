@@ -57,7 +57,6 @@ export const retrieveUserSession = () => async (dispatch) => {
             }
         })
             .then(res => {
-                console.log(res);
                 if (res.status == 200) {
                     dispatch({ type: 'LOGIN_CHANGE', payload: true })
                 }

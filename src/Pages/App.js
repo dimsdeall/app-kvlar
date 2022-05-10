@@ -6,12 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
+    
       <div
         style={{
           maxWidth: "900px",
@@ -27,7 +22,7 @@ function App() {
           </BrowserRouter>
         </Provider>
       </div>
-    </div>
+   
   );
 }
 
