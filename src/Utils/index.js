@@ -1,5 +1,5 @@
 // export const Endpoint = `http://localhost:3010`
-export const Endpoint = `http://103.31.39.48:3010`
+export const Endpoint = `https://api-kvlar.dimsdeall.my.id`
 
 export const formatRupiah = (angka, prefix) => {
 	let number_string = angka.replace(/[^,\d]/g, '').toString(),
