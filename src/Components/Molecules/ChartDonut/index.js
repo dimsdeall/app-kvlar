@@ -21,11 +21,17 @@ function ChartDonut({ data }) {
     if (data.length > 0) {
       let datas = [];
       let labels = [];
+      let length_index = data.length > 6? 6 : data.length
 
-      data.map((val) => {
-        datas.push(val.count);
-        labels.push(val.produk.nama + " [" + formatRupiah(String(val.count), ) + "]");
-      });
+      for (let i = 0; i < length_index; i++) {
+        datas.push(data[i].count);
+        labels.push(data[i].produk.nama + " [" + formatRupiah(String(data[i].count), ) + "]");
+      }
+
+      // data.map((val) => {
+      //   datas.push(val.count);
+      //   labels.push(val.produk.nama + " [" + formatRupiah(String(val.count), ) + "]");
+      // });
 
       setData({
         labels,
