@@ -69,7 +69,7 @@ function DataTableOrder() {
     {
       name: "Customer",
       selector: (row) => row.customer,
-      grow: 2,
+      grow: 3,
     },
     {
       name: "Kasir",
