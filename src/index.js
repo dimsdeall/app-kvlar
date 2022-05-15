@@ -4,6 +4,9 @@ import './index.css';
 import App from './Pages/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-datepicker/dist/react-datepicker.css"
+import 'react-datepicker/dist/react-datepicker-cssmodules.min.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
